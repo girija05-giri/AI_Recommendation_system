@@ -1,4 +1,6 @@
 import streamlit as st
+
+
 st.set_page_config(
     page_title="Product Recommendation System",
     layout="wide",
@@ -8,8 +10,17 @@ st.set_page_config(
 st.title("AI Product Recommendation System")
 st.write("Use the sidebar to navigate between pages.")
 
-
 st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Home", "Login", "Recommend", "Dashboard"])
+
+if page == "Home":
+    st.write("Welcome")
+elif page == "Login":
+    st.write("Login Page")
+elif page == "Recommend":
+    st.write("Recommendations")
+elif page == "Dashboard":
+    st.write("Analytics")
 
 page = st.sidebar.radio("Go to", ["Home", "Recommend", "Analytics"])
 
