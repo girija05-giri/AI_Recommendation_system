@@ -1,0 +1,17 @@
+.main {
+    background-color: #f5f7fa;
+}
+
+h1 {
+    color: #FF9900;
+}
+
+.stButton > button {
+    background-color: #FF9900;
+    color: white;
+    border-radius: 10px;
+}
+
+.stButton > button:hover {
+    background-color: #e68a00;
+}
