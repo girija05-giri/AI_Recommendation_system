@@ -1,5 +1,20 @@
 import streamlit as st
 
+
+st.set_page_config(page_title="Product Recommender", layout="wide")
+
+st.sidebar.title("Navigation")
+
+page = st.sidebar.radio("Go to", ["Home", "Recommend", "Analytics"])
+
+if page == "Home":
+    st.title("Home Page")
+
+elif page == "Recommend":
+    st.title("Recommendation Page")
+
+elif page == "Analytics":
+    st.title("Analytics Page")
 st.set_page_config(
     page_title="AI Product Recommendation System",
     page_icon="🛒",
